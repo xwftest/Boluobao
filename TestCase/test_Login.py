@@ -12,7 +12,7 @@ from Public.get_data import getData
 class TestLogin(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.driver = init_driver()
+        self.driver = init_driver(isReset=False)
         self.protocol_popup_page = ProtocolPopupPage(driver=self.driver)
         self.my_page = MyPage(driver=self.driver)
         self.sign_up_page = SignUpPage(driver=self.driver)

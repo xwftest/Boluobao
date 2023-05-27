@@ -33,3 +33,6 @@ class BaseAction:
 
     def input(self, location, test):
         self.find_element(location).send_keys(test)
+
+    def clear(self, location):
+        self.find_element(location).clear()
